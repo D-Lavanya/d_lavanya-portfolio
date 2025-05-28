@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lavanya Darapureddi Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="mySidebar">
+    <button class="closebtn" onclick="closeSidebar()">×</button>
+    <h2>Lavanya Darapureddi</h2>
+    <p>Visakhapatnam, India</p>
+    <hr />
+    <nav>
+      <a href="#objective">Objective</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <hr />
+    <div class="social-links">
+      <h3>Connect</h3>
+      <a href="https://www.linkedin.com/in/d-lavanya-23l31a4631/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://www.codechef.com/users/d_lavanya" target="_blank" rel="noopener noreferrer">CodeChef</a>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="main" id="mainContent">
+    <header>
+      <button class="openbtn" onclick="openSidebar()">☰</button>
+      <h1>Lavanya Darapureddi Portfolio</h1>
+    </header>
+
+    <section id="objective">
+      <h2>Objective</h2>
+      <p>
+        An enthusiastic Computer Science student with a strong interest in Web Development and UI/UX Design. Eager to gain hands-on experience building responsive, user-friendly interfaces using React. Passionate about Cybersecurity, web development, and modern design tools like Figma.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Vignan’s Institute of Information Technology</strong> (2023 - 2027)
+          <ul>
+            <li>B.Tech in Computer Science Engineering (CyberSecurity)</li>
+            <li>1st Semester SGPA: 9.62/10</li>
+            <li>2nd Semester SGPA: 10/10</li>
+            <li>3rd Semester SGPA: 9.55/10</li>
+          </ul>
+        </li>
+        <li><strong>Sri Chaitanya Junior College</strong> (2021 - 2023)
+          <ul><li>Marks: 974/1000</li></ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Competencies</h2>
+      <ul>
+        <li>Programming Languages: Python, Java, JavaScript</li>
+        <li>Web Development: HTML, CSS, JavaScript, React (learning)</li>
+        <li>Version Control: Git, GitHub (beginner)</li>
+        <li>Web Design Tools: Figma (beginner)</li>
+        <li>Operating Systems: Windows, Linux (basic knowledge)</li>
+        <li>Strong problem solving, teamwork, and collaboration skills</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Relevant Experience</h2>
+      <ul>
+        <li><strong>Sushacks Hackathon</strong> – Teamwork & rapid prototyping experience.</li>
+        <li><strong>Hackverse Hackathon</strong> – Fast-paced Minecraft project development.</li>
+        <li><strong>Google Gen AI Study Jams</strong> – Learned AI tools and technologies.</li>
+        <li><strong>Pragati: Path to Future</strong> – Professional skills & career readiness program.</li>
+        <li><strong>Front-End Development Internship at Saiket Systems</strong> – Built responsive interfaces using HTML, CSS & JavaScript.</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Introduction to HTML, CSS, Java, Python (Sololearn)</li>
+        <li>Ethical Hacking, Palo Alto Virtual Internships (Eduskills)</li>
+        <li>Python Essentials, Cybersecurity Essentials (Cisco Networking Academy)</li>
+      </ul>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Perfect 10/10 SGPA in second semester</li>
+        <li>50+ coding contests on CodeChef with consistent improvement</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:dlavanya2234@gmail.com">dlavanya2234@gmail.com</a></p>
+      <p>Phone: 7569694092</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Lavanya Darapureddi | Designed by Lavanya</p>
+    </footer>
+  </div>
+
+  <script>
+    function openSidebar() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("mainContent").style.marginLeft = "250px";
+    }
+    function closeSidebar() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("mainContent").style.marginLeft= "0";
+    }
+
+    // Automatically close sidebar on small screens when clicking outside
+    window.onclick = function(event) {
+      if (!event.target.matches('.openbtn')) {
+        if(window.innerWidth <= 768){
+          closeSidebar();
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
